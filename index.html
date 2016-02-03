@@ -3,11 +3,227 @@
 <head>
 	<meta charset='utf-8' />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	
+	<script src="js/jquery-2.2.0.js" type="text/javascript"></script>
+	<script src="js/detect.js" type="text/javascript"></script>
+	<script src="js/jquery.fullPage.min.js" type="text/javascript"></script>
+	<link href='http://api.youziku.com/webfont/CSS/569f28c2f629d805a4c58051' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
 	<title>instrument</title>
 </head>
 
 <body>
+	<div id="fullpage">
+		<div class="section section1">
+			<div class="instrment-nav">
+				<a class="piano">Piano</a>
+				<a class="drums">Drums</a>
+			</div>
+			<div class="logo-group">
+				<div class="logo">
+					<img class="logo" src="img/logo2.png"/>
+				</div>
+			</div>
+			<div class="down-arrow">
+				<div>
+					<p>让我们一起快乐弹钢琴。</p>
+				</div>
+				<a class="down-arrow"><img src="img/down-arrow.png"/></a>
+			</div>
+		</div>
+		<div class="section section2">
+			<div id="section2-content" class="section2-content">
+				<p class="section-title">Performer<span class="piano">智能钢琴</span></p>
+				<p id="section2-1" class="section-content">每次弹奏，都得心应手，这是与生俱来的本质，也是我们</p>
+				<p id="section2-2" class="section-content-2">所追求的，想要传递的核心品质。</p>
+				<p class="section-content-2">追求，永无止境。</p>
+				<div class="btn-group-ano">
+					<button class="section2-btn-left">了解更多</button>
+					<button class="section2-btn-right">在线购买</button>
+				</div>
+				<div class="play">
+					<a class="play"><img class="play" src="img/play.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="section section3">
+			<div id="section3-content" class="section3-content">
+				<p class="section-title">Performer<span class="piano">APP</span></p>
+				<p id="section3-1" class="section-content">钢琴学习没有这么难，真正的难在于如何面对枯燥乏味的教学而已</p>
+				<p id="section3-2" class="section-content-2">别让音乐成为你成长路上的痛，快乐才是根本。</p>
+				<div class="btn-group-ano-2">
+					<button class="section3-btn-left">了解更多</button>
+					<button class="section3-btn-right">应用下载</button>
+				</div>
+			</div>
 
+			<div class="pad">
+				<img class="pad"/>
+			</div>
+		</div>
+		<div class="section section4">
+			<div id="section4-content" class="section4-content">
+				<p class="section-title">Performer<span class="piano">公众号</span></p>
+				<p id="section4-1" class="section-content-ano">总有那么一个公众号，为你提供最新最全的乐谱，让你阅遍众谱，</p>
+				<p class="section-content-ano-2">更能影响你的学习欲望，领悟非凡。</p>
+				<div class="btn-group-ano-2">
+					<button class="section4-btn">点击关注</button>
+				</div>
+			</div>
+
+			<div class="phone">
+				<img class="phone" />
+			</div>
+			<div class="info container-fluid">
+				<div class="row info-list">
+					<div class="col-md-2 col-xs-2">
+						<p class="info-title">服务</p>
+						<a class="info-item">体检点</a>
+						<a class="info-item">常见问题</a>
+						<a class="info-item">售后政策</a>
+					</div>
+					<div class="col-md-2 col-xs-2">
+						<p class="info-title">关于我们</p>
+						<a class="info-item">公司简介</a>
+						<a class="info-item">新闻动态</a>
+						<a class="info-item">加入我们</a>						
+						<a class="info-item">联系我们</a>
+					</div>
+					<div class="col-md-2 col-xs-2">
+						<p class="info-title">旗舰店</p>
+						<a class="info-item">天猫</a>						
+						<a class="info-item">京东</a>						
+						<a class="info-item">亚马逊</a>
+						<a class="info-item">当当</a>
+					</div>
+					<div class="col-md-2 col-xs-2">
+						<p class="info-title">关注我们</p>
+						<a class="info-item">官方微博</a>
+						<a class="info-item">官方公众号<a>
+						<a class="info-item">新浪微博</a>
+					</div>
+					<div class="col-md-2 col-xs-2">
+						<button class="info-btn-1">售前客服</button>
+						<button class="info-btn-2">售后客服</button>
+						<a class="info-item">交流群:5456460</a>
+					</div>
+					<div class="col-md-2 col-xs-2 info-last">
+
+						<a class="info-item">售后热线</a>
+						<a class="info-item">020-24586456<a>
+						<a class="info-item">售后热线</a>
+						<a class="info-item">020-24586456<a>
+
+						<a class="info-item">周一至周五&nbsp10:00-21:00</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mobile-info">
+				在线联系客服
+			</div>
+		</div>
+	</div>
 </body>
+<script type="text/javascript">
+
+	(function autoFit() {
+		var isMobile = device.mobile(),
+            isTable = device.tablet();
+
+	    if(isMobile || isTable){
+	    	$("div.phone").css("display","none");
+	    	$("div.pad").css("display","none");
+	    	$("p#section2-1").text("每次弹奏，都得心应手，这是与生俱来的本质，");
+	    	$("p#section2-2").text("也是我们所追求的，想要传递的核心品质。");
+	    	$("p#section3-1").text("钢琴学习没有这么难，真正的难在于如何面");
+	    	$("p#section4-1").text("总有那么一个公众号，为你提供最新最全的乐谱,")
+	    	$("p#section3-1").after('<p class="section-content-2">对枯燥乏味的教学而已</p>')
+	    	$("p#section3-2").text("别让音乐成为你成长路上的痛，");
+	    	$("p#section3-2").after('<p class="section-content-2">快乐才是根本</p>')
+	    	$("p#section4-1").after('<p class="section-content-ano-2">让你阅遍全谱,</p>')
+	    	$(function(){
+			    $('#fullpage').fullpage({
+			    	scrollingSpeed: 	700,
+			    	afterRender: function() {
+			  			mobileInit();
+			    	}
+			    });
+			});
+	    }
+	    else{
+	        $("img.phone").attr("src","img/phone.png");
+	        $("img.pad").attr("src","img/pad.png");
+	        $(function(){
+			    $('#fullpage').fullpage({
+			    	scrollingSpeed: 	500,
+			    	navigation: 		true,
+			    	afterResize: function() {
+						$("img.up-arrow").css("top",$("div#fp-nav ul li").eq(3).offset().top + 20);
+						if ($(window).width() > 900) {
+						
+							if ($("div#section3-content").attr("class") == "") {
+								$("div#section2-content").addClass("section2-content");
+								$("div#section3-content").addClass("section3-content");
+								$("div#section4-content").addClass("section4-content");
+							}
+							
+							$("div.section3-content").css("bottom",$("div.pad").height() + $(window).height()/100 *5);
+							$("div.section4-content").css("bottom",$("div.phone").height() + $("div.info").height() + $(window).height()/100 *1);
+						} else {
+							$("div.section2-content").removeClass("section2-content");
+							$("div.section3-content").removeClass("section3-content");
+							$("div.section4-content").removeClass("section4-content");
+						}
+			    	},
+			    	afterRender: function() {
+			  			pcInit();
+			    	}
+			    });
+			});
+	    }
+	})();
+
+	
+	
+	function mobileInit() {
+		$("a.down-arrow").click(function() {
+			$.fn.fullpage.moveTo(2, 1);
+		});
+	}
+
+	function pcInit() {
+		$("div#fp-nav ul").append("<li><a href='#'><img class='up-arrow' src='img/up-arrow.png' /></a></li>");
+		$("img.up-arrow").css("top",$("div#fp-nav ul li").eq(3).offset().top + 20);
+		if ($(window).width() > 900) {	
+			$("div#section3-content").css("bottom",$("div.pad").height() + $(window).height()/100 *5);
+			$("div#section4-content").css("bottom",$("div.phone").height() + $("div.info").height() + $(window).height()/100 *1);
+
+			// 360兼容
+			setTimeout(function() {
+				
+				$("div#section3-content").css("bottom",$("div.pad").height() + $(window).height()/100 *5);
+				$("div#section4-content").css("bottom",$("div.phone").height() + $("div.info").height() + $(window).height()/100 *1);
+			},10)
+		}
+		$("img.up-arrow").bind("touchstart", function() {
+			$.fn.fullpage.moveTo(1, 1);
+		})
+
+		$("img.up-arrow").bind("click", function() {
+			$.fn.fullpage.moveTo(1, 1);
+		})
+		
+		$("a.down-arrow").click(function() {
+			$.fn.fullpage.moveTo(2, 1);
+		});
+
+	}
+
+</script>
 
 </html>
